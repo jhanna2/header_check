@@ -1,0 +1,39 @@
+import csv
+import requests
+import argparse
+import json
+
+def get_headers(url):
+    response = requests.head(url)
+    return response.headers
+
+def check_sts(headers):
+    sts_header = headers.get('Strict-Transport-Security')
+    if sts_header:
+        return True
+    return False
+
+def main(infile, outfile):
+    results = []
+    with open(infile, 'r') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header row
+        for row in reader:
+            url = row[0]
+            headers = get_headers(url)
+            sts = check_sts(headers)
+            if sts:
+                results.append({'url': url, 'STS': True})
+            else:
+                results.append({'url': url, 'headers': dict(headers)})
+
+    with open(outfile, 'w') as out_file:
+        json.dump(results, out_file, indent=4)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Check for Strict-Transport-Security header in a list of websites')
+    parser.add_argument('--infile', required=True, help='Input CSV file containing list of websites')
+    parser.add_argument('--outfile', required=True, help='Output JSON file to store results')
+    args = parser.parse_args()
+
+    main(args.infile, args.outfile)
