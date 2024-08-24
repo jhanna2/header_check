@@ -1,0 +1,74 @@
+[
+    {
+        "url": "http://www.instagram.com",
+        "headers": {
+            "Location": "https://www.instagram.com/",
+            "Content-Type": "text/plain",
+            "Server": "proxygen-bolt",
+            "Date": "Sat, 24 Aug 2024 14:41:06 GMT",
+            "Connection": "keep-alive",
+            "Content-Length": "0"
+        }
+    },
+    {
+        "url": "http://www.godaddy.com",
+        "headers": {
+            "Server": "AkamaiGHost",
+            "Content-Length": "0",
+            "Location": "https://www.godaddy.com/",
+            "Expires": "Sat, 24 Aug 2024 14:41:06 GMT",
+            "Cache-Control": "max-age=0, no-cache, no-store",
+            "Pragma": "no-cache",
+            "Date": "Sat, 24 Aug 2024 14:41:06 GMT",
+            "Connection": "keep-alive",
+            "Set-Cookie": "market=en-US; expires=Sun, 24-Aug-2025 14:41:06 GMT; path=/; domain=.godaddy.com, currency=USD; expires=Sun, 24-Aug-2025 14:41:06 GMT; path=/; domain=.godaddy.com, akaas_godaddy-com-wildcard=2147483647~rv=98~id=fd340c6ec7ed730a94b174e6a0923dd5~rn=; path=/",
+            "X-Frame-Options": "DENY",
+            "X-ORIGIN-TAG": "frontdoor",
+            "X-ARC": "2, 1, 6a",
+            "Server-Timing": "ak_p; desc=\"1724510466463_400281458_76262608_9_8838_68_0_-\";dur=1"
+        }
+    },
+    {
+        "url": "http://www.youtube.com",
+        "headers": {
+            "Content-Type": "application/binary",
+            "X-Content-Type-Options": "nosniff",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+            "Date": "Sat, 24 Aug 2024 14:41:06 GMT",
+            "Location": "https://www.youtube.com/",
+            "Content-Length": "0",
+            "Server": "ESF",
+            "X-XSS-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN"
+        }
+    },
+    {
+        "url": "http://www.alexa.com",
+        "headers": {
+            "Server": "awselb/2.0",
+            "Date": "Sat, 24 Aug 2024 14:41:06 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "134",
+            "Connection": "keep-alive",
+            "Location": "https://www.alexa.com:443/"
+        }
+    },
+    {
+        "url": "http://www.amazon.com",
+        "headers": {
+            "Server": "CloudFront",
+            "Date": "Sat, 24 Aug 2024 14:41:07 GMT",
+            "Content-Type": "text/html",
+            "Content-Length": "167",
+            "Connection": "keep-alive",
+            "Location": "https://www.amazon.com/",
+            "X-Cache": "Redirect from cloudfront",
+            "Via": "1.1 7c52bc60e0da5f557ed6047264a41c18.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "IAD61-P2",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Amz-Cf-Id": "QwCKu_toEaQWLZkMhsl_Rg1sBghYD20otdMxcLPImBWzXRAUjWAajA=="
+        }
+    }
+]
