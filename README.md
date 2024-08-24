@@ -8,3 +8,5 @@ Export to JSON format.
 If STS exists, print a true with the url.
 
 If STS does not exists, print the full header for analysis.
+
+Utilizes parser arguements; python script.py --infile input.csv --outfile output.json. Outfile is not mandatory.
