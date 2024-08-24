@@ -1,0 +1,13 @@
+###This script came mostly complete with the following prompt from gpt 3.5 turbo###
+
+The script needs to import a list of websites from a csv. Please add command line parsers for infile and outfile.
+
+It then needs to get headers for each url
+
+Examine each header for "Strict-Transport-Security"
+
+If "Strict-Transport-Security" exists, print the url with "STS = frue" as the first JSON field and then print the header
+
+If ""Strict-Transport-Security"" does not exist, print url with "STS = false" as the first JSON field and then print the header
+
+Print in JSON
